@@ -9,13 +9,65 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-    
     <h1 class="text-bg-primary bg-gradient p-3 text-center shadow mb-4">Proyecto GitHub</h1>
+    <hr/>
     
-            
+    <h2 class="text-bg-primary bg-gradient p-0 text-center">Sorteo de amigo Invisible</h2>
+
+    <header class="text-light bg-dark text-center shadow p-3 mb-5">
+        <span class="display-2"><i class="bi bi-film"></i> Title-O-Matic <i class="bi bi-film"></i></span>
+    </header>
+     <div class="container">
+        <div class="row">
+           <div class="col-sm-6">
+              <label for="selPrimeraParte">Preparate para el sorteo</label>
+              <select id="selPrimeraParte" class="form-select mb-4" >
+                 <option value="0" selected>---</option>
+                 <option value="1">Diego</option>
+                 <option value="2">Loly pussy</option>
+                 <option value="3">Cristian</option>
+                 <option value="4">Enrique</option>
+                 <option value="5">Jesús</option>
+                 <option value="6">Angustias</option>
+                 <option value="7">Antonio</option>
+                 <option value="8">Fran</option>
+                 <option value="9">jorge nitales</option>
+                 <option value="10">Jonny melavo</option>
+                 <option value="11">Obsesión Fernández</option>
+              </select>
+              
+              <label for="selTerceraParte">Última parte del título</label>
+              <select id="selTerceraParte" class="form-select mb-4">
+                 <option value="0" selected>---</option>
+                 <option value="1">luna de miel castro</option>
+                 <option value="2">Alex cremento</option>
+                 <option value="3"></option>
+                 <option value="4"></option>
+                 <option value="5"></option>
+                 <option value="6"></option>
+                 <option value="7"></option>
+                 <option value="8"></option>
+                 <option value="9"></option>
+                 <option value="10"></option>
+                 <option value="11"></option>
+                 <option value="12"></option>
+                 <option value="13"></option>
+              </select>
+           </div>
+           <div class="col-sm-6">
+              <img id="imgPelicula" class="card-img-top" src="https://picsum.photos/200/300" alt="Imagen de la película" title="Imagen de la película" width="200" height="300" />
+           </div>
+        </div>
+        <hr />
+        <div class="row">
+           <button onclick="generarTitulo();" class="btn btn-secondary btn-lg mt-3">Generar título</button>
+           <div id="titulo" class="alert alert-success mt-3 text-center display-4" role="alert">-</div>
+        </div>
+         
 
  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/miCodigo.js"></script>
 </body>
 </html>
