@@ -9,58 +9,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 <body>
-    <h1 class="text-bg-primary bg-gradient p-3 text-center shadow mb-4">Proyecto GitHub</h1>
-    <hr/>
-    
-    <h2 class="text-bg-primary bg-gradient p-0 text-center">Sorteo de amigo Invisible</h2>
 
     <header class="text-light bg-dark text-center shadow p-3 mb-5">
-        <span class="display-2"><i class="bi bi-film"></i> Title-O-Matic <i class="bi bi-film"></i></span>
+        <span class="display-2"><i class="bi bi-film shadow"></i> Invisible Friend Raffle <i class="bi bi-film"></i></span>
     </header>
+    <hr/>
      <div class="container">
         <div class="row">
            <div class="col-sm-6">
-              <label for="selPrimeraParte">Preparate para el sorteo</label>
+              <label for="selPrimeraParte">Compañeros:</label>
               <select id="selPrimeraParte" class="form-select mb-4" >
-                 <option value="0" selected>---</option>
-                 <option value="1">Diego</option>
-                 <option value="2">Loly pussy</option>
-                 <option value="3">Cristian</option>
-                 <option value="4">Enrique</option>
-                 <option value="5">Jesús</option>
-                 <option value="6">Angustias</option>
-                 <option value="7">Antonio</option>
-                 <option value="8">Fran</option>
-                 <option value="9">jorge nitales</option>
-                 <option value="10">Jonny melavo</option>
-                 <option value="11">Obsesión Fernández</option>
+                 <option selected>---</option>
+                 <option >Diego</option>
+                 <option >Loly pussy</option>
+                 <option >Cristian</option>
+                 <option >Enrique</option>
+                 <option >Jesús</option>
+                 <option >Angustias</option>
+                 <option >Antonio</option>
+                 <option >Fran</option>
+                 <option >jorge nitales</option>
+                 <option >Jonny melavo</option>
               </select>
               
-              <label for="selTerceraParte">Última parte del título</label>
-              <select id="selTerceraParte" class="form-select mb-4">
-                 <option value="0" selected>---</option>
-                 <option value="1">luna de miel castro</option>
-                 <option value="2">Alex cremento</option>
-                 <option value="3"></option>
-                 <option value="4"></option>
-                 <option value="5"></option>
-                 <option value="6"></option>
-                 <option value="7"></option>
-                 <option value="8"></option>
-                 <option value="9"></option>
-                 <option value="10"></option>
-                 <option value="11"></option>
-                 <option value="12"></option>
-                 <option value="13"></option>
-              </select>
            </div>
+           <ol>
+            <li id="lista0"></li>
+            <li id="lista1"></li>
+            <li id="lista2"></li>
+            <li id="lista3"></li>
+            <li id="lista4"></li>
+            <li id="lista5"></li>
+            <li id="lista6"></li>
+            <li id="lista7"></li>
+            <li id="lista8"></li>
+            <li id="lista9"></li>
+            <li id="lista10"></li>
+            
+        </ol>
            <div class="col-sm-6">
-              <img id="imgPelicula" class="card-img-top" src="https://picsum.photos/200/300" alt="Imagen de la película" title="Imagen de la película" width="200" height="300" />
+              <img id="imgPelicula" class="card-img-top" src="#" alt="Imagen de la película" title="Imagen de la película" width="200" height="300" />
            </div>
         </div>
         <hr />
         <div class="row">
-           <button onclick="generarTitulo();" class="btn btn-secondary btn-lg mt-3">Generar título</button>
+           <button onclick="inicio()" class="btn btn-primary btn-lg mt-3">Sortear</button>
            <div id="titulo" class="alert alert-success mt-3 text-center display-4" role="alert">-</div>
         </div>
          
