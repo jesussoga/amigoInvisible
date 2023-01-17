@@ -27,7 +27,13 @@ btnIntroducir.addEventListener("click", function () {
    document.querySelector("#lista").appendChild(li1).appendChild(p1);  
    nombre.value = " "
 })
-   
+//Para poder hacer intro en el input
+document.getElementById("nombre")
+.addEventListener("keyup", function(e) {
+    if (e.code === 'Enter') {
+        document.getElementById("btnIntroducir").click();
+    }
+});     
 
 //funcion para activar el evento producido en el input 
 function activar() {
