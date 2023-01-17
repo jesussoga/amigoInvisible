@@ -1,8 +1,10 @@
-body {
-  background-image: url(/img/regalos.png);
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+/* Aquí escribiremos el código CSS */
+footer {
+  font-family: cursive;
+  color: antiquewhite;
+  background-color: black;
+}
 
+body {
+  font-family: 'Times New Roman', Times, serif;
 }
