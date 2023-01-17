@@ -85,7 +85,7 @@ const btnReinicio = document.getElementById("btnReinicio");
 btnReinicio.addEventListener("click",function() {
    location.reload();
 } )
-/*
+
 var ls = window.localStorage;
 var array = []
 //Hacemos referencia al boton guardar y escuchamos el evento
@@ -96,12 +96,32 @@ btnGuardar.addEventListener("dblclick", function(){
    console.log(array);
    ls.setItem(nombreClave.value, array)
 })
-
+var listaGuardada;
 const btnMostrar = document.getElementById("btnMostrar");
 btnMostrar.addEventListener("click", function(){
    var nombreClave = document.querySelector("#nombreClave");
-   listaGuardada = ls.getItem(nombreClave.value);
-   console.log(listaGuardada.split(","));
+   listaGuardada = ls.getItem(nombreClave.value).split(",");
+   console.log(listaGuardada);
+   for (let index = 0; index < (listaGuardada.length / 2) ; index++) {
+      
+      var li = document.createElement("li");
+      var p = document.createElement("p");
+      var contenido = listaGuardada[index];
+      p.appendChild(document.createTextNode(contenido));
+      document.querySelector("#lista").appendChild(li).appendChild(p);        
+      arrayResultado.push(contenido);
+      
+   }
+   for (let index = listaGuardada.length / 2; index < listaGuardada.length ; index++) {
+      
+      var li1 = document.createElement("li");
+      var p1 = document.createElement("p");
+      var contenido3 = listaGuardada[index];
+      p1.appendChild(document.createTextNode(contenido3));
+      document.querySelector("#listaNombres").appendChild(li1).appendChild(p1);        
+      arrayResultado.push(contenido3);
+      
+   }
 })
 console.log(Object.keys(ls).length); 
 for (let index = 0; index < Object.keys(ls).length; index++) {
@@ -111,4 +131,15 @@ for (let index = 0; index < Object.keys(ls).length; index++) {
    var contenido3 = Object.keys(ls)[index]
    p2.appendChild(document.createTextNode(contenido3));
    document.querySelector("#lista2").appendChild(li2).appendChild(p2);        
-}*/
+}
+const btnBorrarNombre = document.getElementById("btnBorrarNombre");
+btnBorrarNombre.addEventListener("click", function(){
+   var nombreClave = document.querySelector("#nombreClave");
+   ls.removeItem(nombreClave.value);
+   location.reload();
+})
+const btnBorrarTodo = document.getElementById("btnBorrarTodo");
+btnBorrarTodo.addEventListener("click", function(){
+   var nombreClave = document.querySelector("#nombreClave");
+   ls.clear();
+})
