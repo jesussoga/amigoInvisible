@@ -17,53 +17,54 @@
     <header>
             <h1 class="p-3 text-decoration-underline text-primary bg-warning text-center display-5 shadow">Sorteo Amigo Invisible</h1>
     </header>
-    <main >
-        <div class="text-center m-4">
-        <h3 class="pb-4">Nombres de Compañer@s</h3>
-        <div class="row">
-            <div class="col">
-                <input class="form-control" type="text" name="Nombre" id="nombre" onkeypress="activar()"  placeholder="Escribe tu Nombre" size="14">
+    <main class="game-container">
+        <div class="game-box">
+            <div class="text-center m-4">
+            <h3 class="pb-4">Nombres de Compañer@s</h3>
+            <div class="row">
+                <div class="col">
+                    <input class="form-control" type="text" name="Nombre" id="nombre" onkeypress="activar()"  placeholder="Escribe tu Nombre" size="14">
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" id="btnIntroducir">Añadir</button>
+                </div>
             </div>
-            <div class="col">
-                <button class="btn btn-primary" id="btnIntroducir">Añadir</button>
+            <hr>
+            <div class="row">
+            <div class="col-3"><ol id="lista"></ol></div>
+            <div class="col-9"><ul id= "listaNombres"></ul></div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <button  class=" btn btn-success"id="btnParejas">Generar</button>
+                </div>
+                <div class="col">
+                    <button  class="btn btn-danger"id="btnReinicio">Reiniciar</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row m-5">
+                <div class="col">
+                    <input class="form-control" type="text" id="nombreClave" placeholder="Introduce nombre de grupo">
+                </div>
+                <div class="col">
+                    <button class="btn btn-info" id="btnMostrar">Mostrar</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-info" id="btnGuardar">guardar</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-info" id="btnBorrarNombre">Borrar Nombre</button>
+                </div>
+            </div>
+            <div class="row m-5">
+                <div class="col">
+                    <div class="col"><ol id="lista2"></ol></div>
+                </div>
+            
             </div>
         </div>
-        <hr>
-        <div class="row">
-        <div class="col-3"><ol id="lista"></ol></div>
-        <div class="col-9"><ul id= "listaNombres"></ul></div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col">
-                <button  class=" btn btn-success"id="btnParejas">Generar</button>
-            </div>
-            <div class="col">
-                <button  class="btn btn-danger"id="btnReinicio">Reiniciar</button>
-            </div>
-        </div>
-        <hr>
-        <div class="row m-5">
-            <div class="col">
-                <input class="form-control" type="text" id="nombreClave" placeholder="Introduce nombre de grupo">
-            </div>
-            <div class="col">
-                <button class="btn btn-info" id="btnMostrar">Mostrar</button>
-            </div>
-            <div class="col">
-                <button class="btn btn-info" id="btnGuardar">guardar</button>
-            </div>
-            <div class="col">
-                <button class="btn btn-info" id="btnBorrarNombre">Borrar Nombre</button>
-            </div>
-        </div>
-        <div class="row m-5">
-            <div class="col">
-                <div class="col"><ol id="lista2"></ol></div>
-            </div>
-           
-        </div>
-
 
         <img src="img/regalos.png" alt="Imagen de un regalo" width="50%"/>
 
