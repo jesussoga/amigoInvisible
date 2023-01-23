@@ -7,5 +7,43 @@ footer {
 
 body {
   font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
   background-color: aquamarine ;
+}
+
+/* Contenedor del juego */
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+/* Estilos para dispositivos pequeños */
+@media only screen and (max-width: 600px) {
+  /* Estilos para elementos específicos */
+  .game-box {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+/* Estilos para dispositivos medianos */
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  /* Estilos para elementos específicos */
+  .game-box {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* Estilos para dispositivos grandes */
+@media only screen and (min-width: 900px) {
+  /* Estilos para elementos específicos */
+  .game-box {
+    width: 30%;
+    height: 30%;
+  }
 }
