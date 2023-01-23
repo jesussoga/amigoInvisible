@@ -47,3 +47,11 @@ body {
     height: 30%;
   }
 }
+@media (max-width: 600px) {
+  /* Estas reglas se aplican solo en pantallas con un ancho máximo de 600px */
+  .boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+}
