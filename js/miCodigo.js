@@ -28,12 +28,12 @@ btnIntroducir.addEventListener("click", function () {
    nombre.value = " "
    
 })
-document.getElementById("nombre")
-    .addEventListener("keyup", function(e) {
+  /* document.getElementById("nombre")
+    nombre.addEventListener("keyup", function(e) {
         if (e.code === 'Enter') {
             document.getElementById("btnIntroducir").click();
         }
-    });   
+    }); Codigo comentado,porque no funciona bien en la versión movil */ 
 
      //funcion para activar el evento producido en el input 
 function activar() {
